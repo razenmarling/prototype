@@ -53,24 +53,27 @@
 	width: 50%;
 	float: left;
     margin-top: 30px;
+    display: inline-block;
 }
 .logout-button{
-	width: 50%;
-	float: left;
+	width: 300px;
+	float: right;
     margin-top: 30px;
+    margin-right: -180px;
+    display: inline-block;
 }
-.loggedinas-button .btn-warning,
+.logout-button a{
+	text-decoration: none;
+}
 .logout-button .btn-warning{
-    color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236;
+    color: #fed231;
+    background-color: #f8f8f8;
+    border-color: #fed231;
+    border: 1px solid #fed231;
     padding: 10px 30px;
     text-transform: uppercase;
-    background: #fed231;
-    color: #272727;
-    border: 0;
     box-shadow: 0 0.125rem 0.0625rem rgba(0,0,0,.25);
-    border-radius: 10px;
+    border-radius: 10px
 }
 .loggedinas-button .btn-warning,{
 	margin-right: 110px;
@@ -88,10 +91,40 @@
 	position: absolute;
 	left: 0;
 	padding: 50px 15px 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: center;
+}
+.dashboard-left-col .avatar{
+    width: 100px;
+    height: 100px;
+    margin: -20px auto 20px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.dashboard-left-col .dashboard-logout {
+    border: 1px solid #fff;
+    padding: 6px 14px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    color: #ffffff;
+    text-decoration: none;
+}
+.dashboard-left-col .dashboard-logout:hover{
+    background-color: #ffffff;
+    color: #263238;
 }
 .dashboard-right-col{
-	height: 100vh;
-	padding: 50px 15px 20px;
+    height: 100vh;
+    padding: 70px 15px 20px;
+    position: relative;
+    margin-top: -50px
 }
 .container-fluid{
 	margin-left: 15px;
@@ -101,37 +134,44 @@
 	padding-left: 230px;
 	position: relative;
 }
-.dashboard-header{
-	font-size: 14px;
-	color: #272727;
-	padding: 10px 0;
-	font-weight: 400;
-	border-bottom: 1px solid #ddd;
-	text-transform: capitalize;
+.dashboard-header {
+    font-size: 20px;
+    color: #272727;
+    padding: 10px 0;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
 }
-.breadcrumbs {
+.dashboard-header .breadcrumbs {
+    border-bottom: 0; 
+    padding: 0;
+    margin-bottom: 0;
+}
+.dashboard-header .breadcrumbs li{
     padding: 0;
 }
-.breadcrumbs ul, .dashboard-left-col ul{
+.dashboard-header .breadcrumbs li a {
+    text-decoration: none;
+    color: rgba(39,39,39,.7);
+    display: block;
+    transition: all .2s ease-in-out;
+    padding: 0 10px;
+}
+.dashboard-header .breadcrumbs li:after{
+    content: "/";
+    position: absolute;
+    font-family: icomoon!important;
+    color: rgba(39,39,39,.7);
+    font-size: 22px;
+    top: -5px;
+    right: -6px;
+}
+.dashboard-header .breadcrumbs li.active a{
+    color: #272727
+}
+.dashboard-left-col ul{
 	padding: 0;
-}
-.breadcrumbs ul li{
-	list-style: none;
-	display: inline-block;
-	position: relative;
-}
-.breadcrumbs ul li:before{
-	content: "/";
-	position: absolute;
-	right: 0;
-	display: block;
-}
-.breadcrumbs ul li:last-of-type:before{
-	display: none;
-}
-.breadcrumbs a{
-	text-decoration: none;
-	padding: 0 15px;
+	margin-top: 30px;
 }
 .dashboard-left-col ul li{
 	list-style: none;
@@ -141,6 +181,10 @@
     padding: 8px 15px;
     text-decoration: none;
     color: #ffffff;
+}
+.dashboard-left-col ul li a:hover{
+    background-color:  #f8f8f8;
+    color: #263238;
 }
 @media (max-width: 768px){
 	.dashboard{

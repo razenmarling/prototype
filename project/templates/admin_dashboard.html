@@ -25,11 +25,8 @@
           </div>
         </div>
         <div class="col-sm-6 coL-xs-12">
-          <div class="loggedinas-button">
-            <a class="btn-warning">Admin</a>
-          </div>
           <div class="logout-button">
-            <a href="/logout/{{user}}" class="btn-warning">Logout</a>
+            <a class="btn-warning">Admin</a>
           </div>
         </div>
       </div>
@@ -39,6 +36,13 @@
 
     <div class="dashboard">
         <div class="dashboard-left-col">
+
+          <div class="user-info">
+            <div class="avatar" style="background-image: url('/img/avatar.png');"></div>
+            <label class="user-name">Razen Chris Marlng</label>
+            <a href="/logout/{{user}}" class="dashboard-logout">Logout</a>
+          </div>
+
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>

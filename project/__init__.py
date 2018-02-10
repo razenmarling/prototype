@@ -14,14 +14,14 @@ app.secret_key = 'r��H�_���[��t'
 @app.before_request
 def make_session_permanent():
     session.permanent = True
-    app.permanent_session_lifetime = timedelta(minutes=10)
+    app.permanent_session_lifetime = timedelta(minutes=5)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
 	errormessage = ''
 
-	if any([session.get('admin_logged'), session.get('user_logged')]):
-		return redirect(url_for('user_dashboard'))
+	if session.get('admin_logged'): return redirect(url_for('admin_dashboard'))
+	if session.get('user_logged'): return redirect(url_for('user_dashboard'))
 
 	if request.method == 'POST':
 		username = request.form['username']
