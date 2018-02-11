@@ -19,6 +19,43 @@
 }
 .login .form-control{
 	border-radius: 0;
+    padding-left: 36px;
+}
+.login .form-group{
+    position: relative;
+}
+.login .form-group .fa.fa-user-circle{
+    font-size: 18px;
+    line-height: 36px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    color: rgba(39, 39, 39, 0.4);
+    transition: all .3s ease-in-out;
+}
+.login .form-group .fa.fa-unlock-alt{
+    font-size: 18px;
+    line-height: 36px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    color: rgba(39, 39, 39, 0.4);
+    transition: all .3s ease-in-out;
+}
+.login .form-group .form-control:focus ~ i{
+    color: #66afe9;
+}
+.login .form-group .form-control.error:focus ~ i{
+    color: #D71818;
+}
+.login .form-group .form-control.error:focus{
+    -webkit-box-shadow: 0px 0px 4px #D71818;
+    -khtml-box-shadow: 0px 0px 4px #D71818;
+    -moz-box-shadow: 0px 0px 4px #D71818;
+    -ms-box-shadow: 0px 0px 4px #D71818;
+    -o-box-shadow: 0px 0px 4px #D71818;
+    box-shadow: 0px 0px 4px #D71818;
+    border: 1px solid #D71818;
 }
 .messagebox{
     display: block;

@@ -2,10 +2,16 @@
 <html>
   <head>
     <title>Rocka Real Estate</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/fonts/fontawesome-all.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +29,11 @@
         <form role="form" action="/" method="post">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Enter Username" name="username" id="username" required>
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
           </div>
           <div class="form-group">
             <input type="password" class="form-control" placeholder="Password" name="password" id="password" required>
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
           </div>
          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
