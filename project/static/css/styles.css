@@ -143,7 +143,7 @@
 .dashboard-left-col .dashboard-logout {
     border: 1px solid #fff;
     padding: 6px 14px;
-    display: inline-block;
+    display: block;
     border-radius: 3px;
     font-size: 12px;
     margin-bottom: 12px;
@@ -152,6 +152,8 @@
     transition: all .4s;
     color: #ffffff;
     text-decoration: none;
+    max-width: 100px;
+    margin: auto;
 }
 .dashboard-left-col .dashboard-logout:hover{
     background-color: #ffffff;
