@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rocka Real Estate</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/fonts/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="col-sm-6 coL-xs-12">
+          <div class="menu-left navbar-left">
+            <a href="/admin/dashboard"><img src="/img/loginlogo.png"/></a>
+          </div>
+        </div>
+        <div class="col-sm-6 coL-xs-12">
+          <div class="logout-button">
+            <a class="btn-warning">Admin</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </nav>
+
+    <div class="dashboard">
+        <div class="dashboard-left-col">
+
+          <div class="user-info">
+            <div class="avatar" style="background-image: url('/img/avatar.png');"></div>
+            <label class="user-name">Razen Chris Marlng</label>
+            <a href="/logout/{{user}}" class="dashboard-logout">Logout</a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="/admin/operations"><i class="fa fa-tasks" aria-hidden="true"></i>
+                Operations
+              </a>
+            </li>
+            <li>
+              <a href="/admin/user"><i class="fa fa-users" aria-hidden="true"></i>
+                User
+              </a>
+            </li>
+            <li>
+              <a href="/admin/company"><i class="fa fa-building" aria-hidden="true"></i>
+                Company
+              </a>
+            </li>
+            <li>
+              <a href="/admin/project"><i class="fa fa-bars" aria-hidden="true"></i>
+                Project
+              </a>
+            </li>
+            <li>
+              <a href="/admin/supplier"><i class="fa fa-truck" aria-hidden="true"></i>
+                Supplier
+              </a>
+            </li>
+            <li>
+              <a href="/admin/customer"><i class="fa fa-user" aria-hidden="true"></i>
+                &nbspCustomer
+              </a>
+            </li>
+            <li>
+              <a href="/admin/cost-center"><i class="fa fa-money" aria-hidden="true"></i>
+                Cost Center
+              </a>
+            </li>
+          </ul>
+        </div>
+          <div class="dashboard-header">
+            <ul class="breadcrumbs">
+              <li><a href="">User</a></li>
+            </ul>
+          </div>
+        <div class="dashboard-right-col">
+          <div class="container-fluid">
+            <!-- my dashboard starts here -->
+            <div class="row">
+
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/sell_your_car'?>" class="summary-panel panel light-blue">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title"><br/>Job Order</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+      
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/favourite'?>"  class="summary-panel panel light-green">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-th-list" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title"><br/>Inventory</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+      
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/saved_search'?>" class="summary-panel panel light-orange">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title"><br/>Reports</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+              
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/saved_search'?>" class="summary-panel panel light-blue">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title">Materials<br/>Receiving</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+              
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/favourite'?>"  class="summary-panel panel light-green">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title">Materials<br/>Issuance</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+      
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/saved_search'?>" class="summary-panel panel light-orange">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-undo" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title">Returned<br/>Materials</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/saved_search'?>" class="summary-panel panel light-blue">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-retweet" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title">Materials<br/>Adjusment</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+      
+              <div class="col-sm-6 col-md-3">
+                <a href="<?='/'.SELECTED_LANGUAGE.'/user/saved_search'?>" class="summary-panel panel light-orange">
+                  <div class="panel-body">
+                    <div class="summary-icon">
+                      <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="summary-count-title">
+                      <p class="summary-title">Audit<br/>Trail</p>
+                    </div>
+                  </div>
+                  <div class="panel-footer">Click Here <span class="icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span></div>
+                </a>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

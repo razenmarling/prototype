@@ -58,9 +58,58 @@ def admin_dashboard():
 	else:
 		return redirect(url_for('index'))
 
+@app.route('/admin/user', methods=['GET'])
+def admin_user():
+	if session.get('admin_logged', None):
+		return render_template('admin_user.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+		
+@app.route('/admin/company', methods=['GET'])
+def admin_company():
+	if session.get('admin_logged', None):
+		return render_template('admin_company.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+		
+@app.route('/admin/project', methods=['GET'])
+def admin_project():
+	if session.get('admin_logged', None):
+		return render_template('admin_project.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+
+@app.route('/admin/supplier', methods=['GET'])
+def admin_supplier():
+	if session.get('admin_logged', None):
+		return render_template('admin_supplier.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+		
+@app.route('/admin/customer', methods=['GET'])
+def admin_customer():
+	if session.get('admin_logged', None):
+		return render_template('admin_customer.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+		
+@app.route('/admin/cost-center', methods=['GET'])
+def admin_cost_center():
+	if session.get('admin_logged', None):
+		return render_template('admin_cost_center.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+		
+@app.route('/admin/operations', methods=['GET'])
+def admin_operations():
+	if session.get('admin_logged', None):
+		return render_template('admin_operations.html', user=session['user'])
+	else:
+		return redirect(url_for('index'))
+
 @app.route('/user/dashboard', methods=['GET'])
 def user_dashboard():
 	if session.get('user_logged', None):
-		return render_template('user_dashboard.html')
+		return render_template('user_dashboard.html', user=session['user'])
 	else:
 		return redirect(url_for('index'))
